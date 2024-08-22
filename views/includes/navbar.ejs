@@ -1,0 +1,94 @@
+<!-- <nav class="nav-box">
+    <div id="nav-main">
+      <div class="mt-4 mb-3 nav-main-bar">
+        <div class="nav-icon">
+          <a class="navbar-brand" href="/listings">
+            <i class="fa-brands fa-airbnb airbnb logo"></i>
+          </a>
+          <span class="airbnb">airbnb</span>
+        </div>
+  
+        <div class="nav-search nav-hover nav-search-search">
+          <form class="d-flex needs-validation" role="search" action="/listings/search" method="get" id="searchBox">
+            <input type="search" placeholder="Search" aria-label="Search" name="find" id="mySearchInput">
+            <button type="submit" id="search"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+          </form>
+        </div>
+    
+  
+   
+     
+     <div id="nav-search-hide">
+      <div class="nav-search nav-hover">
+        <form class="d-flex needs-validation" role="search" action="/listings/search" method="get" id="searchBox">
+          <input type="search" placeholder="Search" aria-label="Search" name="find" id="mySearchInput">
+          <button type="submit" id="search"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+        </form>
+      </div>
+    </div>
+      </div>
+    </div>
+  </nav> -->
+  
+
+
+  <nav class="nav-box">
+    <div id="nav-main">
+      <div id="nav-main-bar">
+        <div class="nav-icon">
+          <a class="navbar-brand" href="/listings">
+            <i class="fa-brands fa-airbnb airbnb logo"></i><span class="name-nav">Wanderlust</span>
+          </a>
+        </div>
+        <div class="nav-search nav-hover nav-search-search">
+          <form class="d-flex needs-validation" role="search" action="/listings/search" method="get" id="searchBox">
+            <input type="search" placeholder="Search" aria-label="Search" name="find" id="mySearchInput">
+            <button type="submit" id="search"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+          </form>
+        </div>
+        <div class="user">
+          <div class="dropstart drop-btn">
+            <div
+            class="dropstart-toggle big-btn mt-3"
+             role="button" 
+            data-bs-toggle="dropdown"
+           >
+             <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;
+             <div class="user-circle"><i class="fa-solid fa-user"></i></div>
+            </div>
+   
+              <ul class="dropdown-menu drop-bar">
+                <li>
+                  <a class="dropdown-item underline" href="/listings/new"
+                    >Add New Listings</a
+                  >
+                </li>
+                <br />
+                <% if(!currUser){ %>
+                <li>
+                  <a class="dropdown-item underline" href="/signUp ">SignUp</a>
+                </li>
+                <br />
+                <li>
+                  <a class="dropdown-item underline" href="/login ">LogIn</a>
+                </li>
+                <% } %>
+                <br />
+                <% if(currUser) {%>
+                <li>
+                  <a class="dropdown-item underline" href="/logout">LogOut</a>
+                </li>
+                <% } %>
+              </ul>
+          </div>
+       </div>  
+      <div id="nav-search-hide">
+        <div class="nav-search nav-hover">
+          <form class="d-flex needs-validation" role="search" action="/listings/search" method="get" id="searchBox">
+            <input type="search" placeholder="Search" aria-label="Search" name="find" id="mySearchInput">
+            <button type="submit" id="search"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>

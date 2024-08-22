@@ -1,0 +1,245 @@
+/* General Footer Styles */
+.f-info {
+    width: 100%;
+    padding: 20px;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+}
+.hr{
+    width:100%;
+    height: 3px;
+    color: black;
+}
+
+.social {
+    width: 100%;
+    font-size: 25px;
+    margin: 30px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 0.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list {
+    text-decoration: underline;
+
+    margin: 0 1rem;
+    transition: text-decoration 0.5s;
+}
+
+.list:hover {
+    text-decoration: underline;
+}
+
+.hr {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.footT {
+    margin: 1rem 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 1;
+    text-align: center;
+}
+
+.allfoot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.op {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0.7;
+}
+
+.supp {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.thref, .thres, .thret {
+    margin: 1rem 2rem;
+    text-align: center;
+}
+
+
+
+.privacy a {
+    text-decoration: none;
+    color: #222222;
+} 
+
+.privacy a:hover {
+    text-decoration: underline;
+}
+
+.all-f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.privacy {
+    order: 1;
+    flex: 1;
+    text-align:center;
+}
+
+.privacy-term{
+   padding-left: 40px;
+}
+
+.icn-footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 21px;
+    order: 9; 
+    flex: 1;
+    text-align: right;
+}
+
+.INR a, .icn-footer a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+.icons a{
+    transition: transform 0.5s ease;
+}
+
+.icons a{
+    font-size: 24px;
+}
+
+.icons a :hover{
+        transform: scale(1.4); /* Enlarge the icon */
+}
+
+.name {
+    color: darkred;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .social {
+        font-size: 20px;
+    }
+
+    .footT {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .supp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thref, .thres, .thret {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .icn-footer {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social {
+        font-size: 18px;
+    }
+    .all-f{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .link {
+        width: 250px;
+        height: 30px;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        direction: ltr;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+        -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+    }
+    
+    .list {
+        flex-shrink: 0;
+        margin-right: 20px;
+        transition: text-decoration 0.3s;
+        white-space: nowrap;
+    }
+
+     .allfoot, .supp, .icn-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+     .footT, .thref, .thres, .thret {
+        margin: 0.5rem 0;
+    }
+     .privacy {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    } 
+
+    .icn-footer {
+        font-size: 16px;
+    } 
+
+    .name {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social {
+        font-size: 16px;
+    }
+
+    .footT, .thref, .thres, .thret {
+        margin: 0.3rem 0;
+        font-size: 14px;
+    }
+   
+
+    .icn-footer {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+   
+}
+

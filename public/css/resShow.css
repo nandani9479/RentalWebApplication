@@ -1,0 +1,22 @@
+.review-card {
+    height: auto;
+    max-width: 100%;
+   
+}
+
+.review-card .card-body {
+    padding: 10px;
+}
+
+.review-card .card-title {
+    font-size: 1.1rem;
+}
+
+.review-card .card-text {
+    font-size: 0.9rem;
+}
+
+.review-card button {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+}
